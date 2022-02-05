@@ -26,6 +26,7 @@ animations = [ {
 } ]
 
 [node name="Mob" type="RigidBody2D"]
+collision_mask = 0
 gravity_scale = 0.0
 __meta__ = {
 "_edit_group_": true
@@ -35,10 +36,8 @@ __meta__ = {
 scale = Vector2( 0.75, 0.75 )
 frames = SubResource( 1 )
 animation = "swim"
-frame = 1
 playing = true
 
 [node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 0
